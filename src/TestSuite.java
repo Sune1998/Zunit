@@ -1,7 +1,13 @@
 public abstract class TestSuite {
 
+    private int passed;
+    private int failed;
+
     public void  runTestSuite () {
-        // TODO skal gøre et eller andet.
+       passed = 0;
+       failed = 0;
+
+       testliste();
     }
 protected abstract void testliste();
 
