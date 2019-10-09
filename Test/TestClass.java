@@ -7,10 +7,12 @@ public class TestClass  extends TestSuite{
     }
 
     public void testThis () {
-        // TODO
+        int result = 5;
+        assertEquals(5, result);
+
     }
 
     public void TestThat() {
-        //TODO
+        assertEquals(3, 7);
     }
 }

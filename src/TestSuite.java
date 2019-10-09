@@ -8,11 +8,20 @@ public abstract class TestSuite {
        failed = 0;
 
        testliste();
+        System.out.println("Test passed" + passed);
+        System.out.println("Test failed" + failed);
     }
 protected abstract void testliste();
 
     public  void  assertEquals (int expected, int actual) {
-        // TODO
+        if (expected == actual) {
+            passed++;
+        }
+        else {
+            failed++;
+            System.out.println("Expected" + expected +
+                    "\nActual:" + actual);
+        }
 
     }
 
